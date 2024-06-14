@@ -25,9 +25,16 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 1rem;
+
+}
+
+nav img {
+  height: 5rem;
 }
 
 a{

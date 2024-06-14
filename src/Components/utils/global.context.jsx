@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext, useState} from "react";
 
 export const initialState = {theme: "", data: []}
 
