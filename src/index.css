@@ -93,12 +93,16 @@ form{
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  width: 90vw;
+  justify-content:space-around;
+  gap: 3rem;
+  width: 70vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
 }
 
 table {
