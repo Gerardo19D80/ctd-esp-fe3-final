@@ -14,7 +14,7 @@ const Card = ({ cart, setCart}) => {
         {/* En cada card deberan mostrar en name - username y el id */}
         <img src="./images/doctor.jpg" alt="imagensinfoto" />
         <h4>{name}</h4>
-        <h4>{username}</h4>
+        <p>{username}</p>
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
