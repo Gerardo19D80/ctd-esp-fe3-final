@@ -18,7 +18,7 @@ const Home = () => {
     // .then ((response) => { return response.json() })
     // .then ((data) => { 
     //     console.log(data);
-    //     setDoctor(data);
+    //     setDoctores(data);
     // })
     // .catch (err => console.log(err))
     
