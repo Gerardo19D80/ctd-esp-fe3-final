@@ -1,15 +1,21 @@
 import { createContext, useContext, useState} from "react";
 
-export const initialState = {theme: "", data: []}
+// este es el contexto creado
+const ContextGlobal = createContext();
 
-export const ContextGlobal = createContext(undefined);
+const ContextProvider = ({ children }) => {
 
-export const ContextProvider = ({ children }) => {
-  //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
+  const [modoOscuro, setModoOscuro] = useState(false)
 
   return (
-    <ContextGlobal.Provider value={{}}>
+    <ContextGlobal.Provider value={{modoOscuro, setModoOscuro}}>
       {children}
     </ContextGlobal.Provider>
   );
 };
+
+export default ContextProvider;
+
+export const useContextGlobal = () =>{
+  return useContext(ContextGlobal);
+}
