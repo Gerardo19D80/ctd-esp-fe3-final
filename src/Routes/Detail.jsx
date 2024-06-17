@@ -18,7 +18,10 @@ const Detail = () => {
   }, []);
 
   return (
-    <>
+    <div className='globalDetail'>
+    <section className='detail'>
+      <img src="../images/doctor.jpg" alt="imagen-doctor" />
+    </section>
     <section className='detail'>
       <h2>{data.name} matricula nro. : 1400-{data.id} </h2>
       <p>Nombre Completo: {data.name}, {data.username}</p>
@@ -29,7 +32,7 @@ const Detail = () => {
    
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-    </>
+    </div>
   )
 }
 

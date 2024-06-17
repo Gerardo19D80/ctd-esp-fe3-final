@@ -4,8 +4,8 @@ import "../index.css"
 const Footer = () => {
   return (
     <footer className='footer'>
-        <p>Powered by</p>
-        <img src='./images/DH.png' alt='DH-logo' />
+        <p>Desarrollado por los alumnos: Fernando Palmas y Gerardo Daglio </p>
+        <img src='../images/DH.png' alt='DH-logo' />   
     </footer>
   )
 }

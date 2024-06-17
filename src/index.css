@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -47,7 +48,7 @@ a:hover{
   color: blue;
 } 
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -59,14 +60,17 @@ footer {
   margin-top: 2rem;
 }
 
-footer > img{
+.footer > img{
   width: 200px;
   margin: 0;
 }
-footer > p{
+.footer > p{
   margin: 0;
   padding-top: 0.7rem;
+  color:burlywood;
+  font-size: small;
 }
+
 
 .form{
   display: flex;
@@ -104,6 +108,7 @@ footer > p{
 
 .card img {
   width: 100%;
+  border-radius: 10%;
 }
 
 table {
@@ -139,4 +144,15 @@ tr:nth-child(even) {
   flex-direction:column;
   align-items: center;
   width:100%;
+}
+
+.globalDetail{
+  display:flex;
+  justify-content:center;
+}
+
+.globalDetail img {
+  padding: 5%;
+  width: 40%;
+  border-radius: 25%;
 }
