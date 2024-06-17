@@ -19,7 +19,7 @@ const Navbar = () => {
       
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
       
-      <img src="./images/LOGO.png" alt="logo" />
+      <h2 style={{color: 'red'}}>DH <a href={routes.home}>ODONTO</a></h2>
       <Link to={routes.home}><h4>Home</h4></Link>
       <Link to={routes.contact}><h4>Contacto</h4></Link>
       <Link to={routes.favs}><h4>Mis Favoritos</h4></Link>
