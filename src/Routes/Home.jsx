@@ -11,8 +11,7 @@ const Home = () => {
   const [cart, setCart] = useState([]);
   const [doctores, setDoctores] = useState([])
   const url = 'https://jsonplaceholder.typicode.com/users'
-  //const url-2 = 'https://jsonplaceholder.typicode.com/users/:id'
-
+  
   useEffect(() => {
     //manera #1 de hacer un fetch
     // fetch(url)

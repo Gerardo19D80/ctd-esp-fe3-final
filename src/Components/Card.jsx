@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Card = ({ cart, setCart}) => {
@@ -11,9 +12,10 @@ const Card = ({ cart, setCart}) => {
 
   return (
     <div className="card">
-        {/* En cada card deberan mostrar en name - username y el id */}
-        <img src="./images/doctor.jpg" alt="imagensinfoto" />
-        <h4>{name}</h4>
+        <Link to={'/dentist/' + cart.id}>
+            <img src="./images/doctor.jpg" alt="imagensinfoto" />
+            <h4 style={{ textAlign: 'center' }}>{name}</h4>
+        </Link>
         <p>{username}</p>
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
