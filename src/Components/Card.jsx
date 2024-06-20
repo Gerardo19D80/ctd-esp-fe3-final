@@ -1,10 +1,13 @@
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
+import {useFavContext} from "./utils/favs.context";
+import "../../src/index.css";
 
 
 const Card = ({ cart, setCart}) => {
 
   const {name, username, id} = cart;
+  const { setFavourites } = useFavContext();
 
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage
@@ -17,10 +20,7 @@ const Card = ({ cart, setCart}) => {
             <h4 style={{ textAlign: 'center' }}>{name}</h4>
         </Link>
         <p>{username}</p>
-        {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
-
-        {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton">⭐️</button>
+        <button onClick={() => setFavourites((prev) => [...prev, cart])} className="favButton">Add Fav</button>
     </div>
   );
 };

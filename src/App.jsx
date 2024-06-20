@@ -23,7 +23,7 @@ function App() {
             <Route path={routes.favs} element={<Favs />}/>
             <Route path={routes.contact} element={<Contact />}/>
             <Route path={routes.detail} element={<Detail />}/>
-            <Route path="*" element={<h2>Error 404 - Page Not Found</h2>}/>
+            <Route path="*" element={<h2 style={{textAlign: 'center', color:'red'}}>Error 404 - Page Not Found</h2>}/>
           </Routes>
           <Footer/>
       </div>
