@@ -26,7 +26,7 @@ const Navbar = () => {
       <Link to={routes.favs}><h4>Mis Favoritos</h4></Link>
       
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button onClick={toogleModoOscuro}>
+      <button onClick={toogleModoOscuro} className='customButtom'>
       {modoOscuro ? "Light Mode" : "Dark Mode"}
       </button>
     

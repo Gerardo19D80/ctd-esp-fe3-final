@@ -16,15 +16,18 @@ code {
   background-color:blueviolet;
   color:aliceblue;
   padding: 10px;
-  border-color: blueviolet;
-  width: 90%;
+  border: none;
+  width: 60%;
   cursor: pointer;
   margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px;
 }
 
 .favButton:hover{
   background-color:whitesmoke;
-  color:blueviolet
+  color:blueviolet;
+  border: 1px solid blueviolet;
 }
 
 h1{
@@ -165,4 +168,20 @@ tr:nth-child(even) {
   padding: 5%;
   width: 40%;
   border-radius: 25%;
+}
+
+.customButtom {
+  background-color: blueviolet;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customButtom:hover {
+  background-color:aliceblue;
+  color:blueviolet;
+  border: 1px solid blueviolet;
 }
