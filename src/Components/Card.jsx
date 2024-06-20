@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -24,5 +24,6 @@ const Card = ({ cart, setCart}) => {
     </div>
   );
 };
+
 
 export default Card;

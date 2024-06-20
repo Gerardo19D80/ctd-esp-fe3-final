@@ -23,7 +23,7 @@ const Detail = () => {
       <img src="../images/doctor.jpg" alt="imagen-doctor" />
     </section>
     <section className='detail'>
-      <h2>{data.name} matricula nro. : 1400-{data.id} </h2>
+      <h3>{data.name} matricula nro. : 1400-{data.id} </h3>
       <p>Nombre Completo: {data.name}, {data.username}</p>
       <p>E-mail: <a>{data.email}</a></p>
       <p>Telefono: {data.phone}</p>
