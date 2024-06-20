@@ -1,6 +1,9 @@
 # ctd-fe3-final
 
 Examen Final de Frontend III
+Alumnos: Fernando Palmas & Gerardo Daglio
+
+En este documento agregaremos comentarios a los items vistos con problematicas que fueron surgiendo y aspectos logrados.
 
 ## Indice
 
@@ -17,6 +20,9 @@ Examen Final de Frontend III
 ## Requisitos
 
 Es indispensable clonar este proyecto en un repositorio privado, para poder trabajar de forma _individual_ o en _dupla_. No se aceptarán proyectos que se hayan realizado sin partir de este template. Para eso deberás crear un repositorio con el nombre "ctd-esp-fe3-final" en tu cuenta de Github y luego seguir los siguientes pasos en tu terminal
+
+> [!NOTE]
+> repositio privado creado. Listo
 
 ```
 # clona el repositorio del final en tu computadora
@@ -42,9 +48,23 @@ Las siguientes condiciones son requisitos mínimos necesarios para la aprobació
 - **Cumplir con todas las funcionalidades obligatorias**
 - Solo se podrán utilizar las librerías que se detallan en este README. Ver [Dependencias](docs/desarrollo.md#dependencias)
 - No se considerará realizada cualquier funcionalidad que sea implementada utilizando una librería distinta a las permitidas.
+
+> [!NOTE]
+> Aqui descargamos axios & react router dom. 
+
+
 - Deberá ser desarrollada utilizando Javascript con React.js como libreria.
+
+> [!NOTE]
+> Hecho 
+
 - Se espera que la página de Contacto, contenga los flujos de validación necesarios (minimo 2 validaciones), para un correcto submit del formulario.
+> [!NOTE]
+> Validamos con .lenght, con trim(), con regex.
+
 - En los casos en que se requiera dar estilos a componentes, deberá realizarse teniendo en cuenta el theme del contexto global.
+> [!NOTE]
+> Acomodamos ciertos estilos en index.css y otros muy pocos con el formato style dentro del componente en por ejemplo un <h2>
 
 ### Aspectos que modifican la valoración final de la nota
 
@@ -52,7 +72,7 @@ Los siguientes aspectos son extras al requisito mínimo de aprobación que será
 
 **Validaciones**
 
-- Una validación para cada campor es suficiente, pueden ser "manuales" o con expreciones regulares. Lo importante es el correcto manejo de errores y submit.
+- Una validación para cada campo es suficiente, pueden ser "manuales" o con expreciones regulares. Lo importante es el correcto manejo de errores y submit.
 
 **Funcionalidad de destacados**
 
@@ -82,6 +102,9 @@ La API a utilizar sera la siguiente:
 
 Y para cada dentista en especifico:
 `https://jsonplaceholder.typicode.com/users/:id`
+
+> [!NOTE]
+> se utilizaron
 
 ### Formato de Entrega
 
