@@ -4,7 +4,7 @@ import {useFavContext} from "./utils/favs.context";
 import "../../src/index.css";
 
 
-const Card = ({ cart, setCart}) => {
+const Card = ({ cart, children}) => {
 
   const {name, username, id} = cart;
   const { setFavourites } = useFavContext();
@@ -20,7 +20,7 @@ const Card = ({ cart, setCart}) => {
             <h4 style={{ textAlign: 'center' }}>{name}</h4>
         </Link>
         <p>{username}</p>
-        <button onClick={() => setFavourites((prev) => [...prev, cart])} className="favButton">Add Fav</button>
+       {children}
     </div>
   );
 };

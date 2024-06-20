@@ -33,11 +33,14 @@ const Home = () => {
 
       <h1> Selecciona a tu profesional: </h1>
       <div className='card-grid'>
-        {/* Aqui deberias renderizar las cards */}
-        
+  
         {doctores.map((doctor) => 
-        <Card cart={doctor} key={doctor.id} setCart={setCart}/>
-        )}
+        <Card cart={doctor} key={doctor.id} setCart={setCart}>
+         <button onClick={() => setFavourites((prev) => [...prev, cart])} className="favButton">
+          Agregar a Favoritos
+          </button>
+        </Card>
+          )}
       </div>
     </main>
   )

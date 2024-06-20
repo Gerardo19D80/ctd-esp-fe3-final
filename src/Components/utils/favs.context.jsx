@@ -2,10 +2,10 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const FavContext = createContext();
 
-//const lsFavourites = JSON.parse(localStorage.getItem("favourites"));
+const parseFav = JSON.parse(localStorage.getItem("favourites")) || [];
 
 const Context = ({children}) => {
-    const [favourites, setFavourites] = useState([]);
+    const [favourites, setFavourites] = useState(parseFav);
 
     useEffect(() => {
         localStorage.setItem("favourites", JSON.stringify(favourites));
