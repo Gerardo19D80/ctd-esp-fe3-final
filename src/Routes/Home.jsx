@@ -7,6 +7,7 @@ import "../index.css";
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
+  
   const [cart, setCart] = useState([]);
   const [doctores, setDoctores] = useState([])
   const url = 'https://jsonplaceholder.typicode.com/users'
@@ -35,11 +36,7 @@ const Home = () => {
       <div className='card-grid'>
   
         {doctores.map((doctor) => 
-        <Card cart={doctor} key={doctor.id} setCart={setCart}>
-         <button onClick={() => setFavourites((prev) => [...prev, cart])} className="favButton">
-          Agregar a Favoritos
-          </button>
-        </Card>
+        <Card cart={doctor} key={doctor.id} setCart={setCart}/>
           )}
       </div>
     </main>

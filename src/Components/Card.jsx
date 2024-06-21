@@ -4,14 +4,22 @@ import {useFavContext} from "./utils/favs.context";
 import "../../src/index.css";
 
 
-const Card = ({ cart, children}) => {
+const Card = ({ cart }) => {
 
   const {name, username, id} = cart;
-  const { setFavourites } = useFavContext();
+  const { state, dispatch } = useFavContext();
+
+  //el metodo findFav va a guardar en la variable un solo objeto
+  const findFav = state.favourites.find((item) => cart.id === item.id )
+  console.log (findFav);
 
   const addFav = ()=>{
-    // Aqui iria la logica para agregar la Card en el localStorage
-  }
+    if (findFav) {
+      dispatch({type: "DELETE_FAV", payload: cart})
+    } else {
+      dispatch({type: "ADD_FAV", payload: cart }) 
+    } 
+  };
 
   return (
     <div className="card">
@@ -20,7 +28,9 @@ const Card = ({ cart, children}) => {
             <h4 style={{ textAlign: 'center' }}>{name}</h4>
         </Link>
         <p>{username}</p>
-       {children}
+        <button onClick={addFav} className="favButton">
+          {findFav ? "Quitar de favoritos" : "Agregar a Favoritos"}
+          </button>
     </div>
   );
 };
